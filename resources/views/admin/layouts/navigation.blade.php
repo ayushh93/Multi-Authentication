@@ -35,10 +35,10 @@
 
                     <x-slot name="content">
                         <!-- Authentication -->
-                        <form method="POST" action="{{ route('admin.logout') }}">
+                        <form method="POST" action="{{ route('admin.adminlogout') }}">
                             @csrf
 
-                            <x-dropdown-link :href="route('admin.logout')"
+                            <x-dropdown-link :href="route('admin.adminlogout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
@@ -77,10 +77,10 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Authentication -->
-                <form method="POST" action="{{ route('admin.logout') }}">
+                <form method="POST" action="{{ route('admin.adminlogout') }}">
                     @csrf
 
-                    <x-responsive-nav-link :href="route('admin.logout')"
+                    <x-responsive-nav-link :href="route('admin.adminlogout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}

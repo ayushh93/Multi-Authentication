@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Whoarewe;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -22,12 +21,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
-            AdminSeeder::class,
-            SiteSettingSeeder::class,
-            ContactDetailSeeder::class,
-            MessageFromDirectorSeeder::class,
-            RecommendedGearSeeder::class,
-            WhoareweSeeder::class,
+            AdminSeeder::class
         ]);
     }
 }
