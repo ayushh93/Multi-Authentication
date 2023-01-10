@@ -1,0 +1,5 @@
+@include('frontend.layouts.includes.header')
+@include('frontend.layouts.includes.floating')
+@yield('main-content')
+@include('frontend.layouts.includes.search')
+@include('frontend.layouts.includes.footer')
